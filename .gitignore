@@ -1,7 +1,5 @@
 # git diff files
 *.diff
 
-node_modules/
-
 website/css/chessboard.css
 website/js/chessboard.js
