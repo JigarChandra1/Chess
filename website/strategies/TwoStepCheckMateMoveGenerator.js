@@ -12,7 +12,7 @@ class TwoStepCheckMateMoveGenerator {
 
 			var nonAttackingMoves = NonVulnerableMoveGenerator.getNonVulnerableMoves(gameInfo).saferMoves;
 			var checkMateMove = null;
-			if (nonAttackingMoves.length > 0) {
+			if (nonAttackingMoves && nonAttackingMoves.length > 0) {
 				for(var i = 0; i < nonAttackingMoves.length; i++) {
 					let move = nonAttackingMoves[i];
 					let fen = gameInfo.fen();
